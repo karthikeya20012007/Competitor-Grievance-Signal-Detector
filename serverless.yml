@@ -1,0 +1,21 @@
+service: competitor-signal-detector
+
+frameworkVersion: ">=3.0.0"
+
+provider:
+  name: aws
+  runtime: python3.10
+  stage: dev
+  timeout: 30
+
+plugins:
+  - serverless-offline
+
+functions:
+  detectSignals:
+    handler: handler.detect_signals_handler
+
+    events:
+      - http:
+          path: signals
+          method: get
