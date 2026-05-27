@@ -1,5 +1,6 @@
 import requests
 
+
 REDDIT_URLS = [
 
     "https://www.reddit.com/r/recruiting/new.json?limit=3",
@@ -74,7 +75,6 @@ def fetch_reddit_posts():
                     "text": text,
                 })
 
-
         except Exception as e:
 
             print(
@@ -83,13 +83,14 @@ def fetch_reddit_posts():
 
     return posts
 
+
 seeded_posts = [
 
     {
         "source": "Reddit",
 
         "url":
-            "https://reddit.com/example1",
+            "https://www.reddit.com/r/cscareerquestions/",
 
         "text":
             (
@@ -104,7 +105,7 @@ seeded_posts = [
         "source": "Trustpilot",
 
         "url":
-            "https://trustpilot.com/example2",
+            "https://www.trustpilot.com/",
 
         "text":
             (
@@ -118,7 +119,7 @@ seeded_posts = [
         "source": "Reddit",
 
         "url":
-            "https://reddit.com/example3",
+            "https://www.reddit.com/r/recruiting/",
 
         "text":
             (
