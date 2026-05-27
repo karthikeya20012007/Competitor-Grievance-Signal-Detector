@@ -80,3 +80,39 @@ All code was reviewed, modified, tested, and understood before inclusion in the 
 - Verified multiple scoring outcomes
 - Refined structured signal records
 - Improved README explanations
+
+---
+
+# Example AI Interaction Excerpts
+
+## Prompt
+
+How can I reduce ambiguity where negative phrases may not actually refer to the competitor platform?
+
+## AI Guidance Summary
+
+Suggested contextual proximity matching using word windows around competitor mentions instead of global keyword matching.
+
+---
+
+## Prompt
+
+How should confidence scores be assigned without using ML models?
+
+## AI Guidance Summary
+
+Suggested heuristic scoring using:
+- competitor detection
+- contextual negative phrases
+- category count
+- ambiguity penalties
+
+---
+
+## Prompt
+
+How can I make the system compatible with Serverless Framework locally?
+
+## AI Guidance Summary
+
+Suggested converting the CLI runner into a lightweight serverless-offline endpoint using handler.py and serverless.yml.
